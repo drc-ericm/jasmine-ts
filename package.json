@@ -5,16 +5,16 @@
   "main": "lib/index.js",
   "bin": "lib/index.js",
   "types": "dist/index.d.ts",
+  "files": ["lib/"],
   "scripts": {
     "build": "npm run compile",
     "precompile": "rimraf lib",
-    "postinstall": "tsc",
     "compile": "tsc --project tsconfig.json",
     "lint": "./node_modules/.bin/tslint -p tsconfig.json",
     "jasmineTs": "node lib/index.js --config=spec/jasmine.json spec/jasmine-ts.spec.ts --transpileOnly --compilerOptions='{\"allowJs\": true}'",
     "test": "npm run lint && npm run compile && npm run jasmineTs",
     "prepublishOnly": "tsc",
-    "prepublish": "tsc"
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
