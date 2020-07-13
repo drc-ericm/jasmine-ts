@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "bin": "lib/index.js",
   "scripts": {
+    "postinstall": "npm run compile",
     "precompile": "rimraf lib",
     "compile": "tsc --project tsconfig.json",
     "lint": "./node_modules/.bin/tslint -p tsconfig.json",
