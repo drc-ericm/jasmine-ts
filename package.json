@@ -4,6 +4,7 @@
   "description": "Execute jasmine with ts-node",
   "main": "lib/index.js",
   "bin": "lib/index.js",
+  "files": ["lib/**/*"],
   "scripts": {
     "build": "npm run compile",
     "precompile": "rimraf lib",
