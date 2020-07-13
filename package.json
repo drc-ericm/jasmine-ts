@@ -14,7 +14,7 @@
     "jasmineTs": "node lib/index.js --config=spec/jasmine.json spec/jasmine-ts.spec.ts --transpileOnly --compilerOptions='{\"allowJs\": true}'",
     "test": "npm run lint && npm run compile && npm run jasmineTs",
     "prepublishOnly": "tsc",
-    "prepublish": "npm run compile"
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
