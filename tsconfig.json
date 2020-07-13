@@ -1,13 +1,21 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "ES2015",
-        "strict": true,
-        "sourceMap": true,
-        "inlineSources": true,
-        "outDir": "lib"
-    },
-    "files": [
-      "src/index.ts"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2015",
+    "declaration": true,
+    "strict": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "outDir": "lib"
+  },
+  "files": [
+    "src/index.ts"
+  ],
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "spec"
+  ]
 }
