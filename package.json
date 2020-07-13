@@ -3,7 +3,6 @@
   "version": "0.3.0",
   "description": "Execute jasmine with ts-node",
   "main": "lib/index.js",
-  "bin": "lib/index.js",
   "types": "dist/index.d.ts",
   "files": ["lib/**/*"],
   "scripts": {
