@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/svi3c/jasmine-ts#readme",
   "dependencies": {
+    "tsconfig-paths": "^3.9.0",
     "yargs": "^13.2.4"
   },
   "peerDependencies": {
